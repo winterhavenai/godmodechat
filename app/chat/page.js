@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 
 const OPENING_MESSAGE = `**Welcome.**
 
-You can bring anything to Jesus right now â a worry, a decision, a fear, a celebration, a question, or a prayer for someone you love.
+You can bring anything to Jesus right now — a worry, a decision, a fear, a celebration, a question, or a prayer for someone you love.
 
 Nothing is too small. Nothing is too big.
 
@@ -75,7 +75,7 @@ export default function ChatPage() {
         {
           role: "assistant",
           content:
-            "I'm sorry â something went wrong on my end. Please try again, and know that Jesus is with you right now regardless.",
+            "I'm sorry — something went wrong on my end. Please try again, and know that Jesus is with you right now regardless.",
         },
       ]);
     } finally {
@@ -107,7 +107,7 @@ export default function ChatPage() {
         // Scripture dash lines
         processed = processed.replace(
           /^- \*(.+?)\*/,
-          '<span style="display:block;margin:0.4rem 0">â <em>$1</em></span>'
+          '<span style="display:block;margin:0.4rem 0">— <em>$1</em></span>'
         );
         return processed;
       });
@@ -126,7 +126,7 @@ export default function ChatPage() {
       {/* Header */}
       <header className="chat-header">
         <h1>GodModeChat</h1>
-        <a href="/">â Back to Home</a>
+        <a href="/">← Back to Home</a>
       </header>
 
       {/* Messages */}
